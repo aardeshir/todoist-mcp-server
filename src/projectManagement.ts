@@ -1,4 +1,1 @@
-{
-  "content": "import { TodoistApi } from '@doist/todoist-api-typescript';\n\nexport async function createProject(name: string, options?: {\n  color?: string;\n  parentId?: string;\n  order?: number;\n  favorite?: boolean;\n}) {\n  try {\n    const api = new TodoistApi(process.env.TODOIST_API_TOKEN);\n    return await api.addProject({\n      name,\n      ...options\n    });\n  } catch (error) {\n    console.error('Failed to create project:', error);\n    throw error;\n  }\n}\n",
-  "encoding": "utf-8"
-}
+{"encoding": "base64", "content": "aW1wb3J0IHsgVG9kb2lzdEFwaSB9IGZyb20gJ0Bkb2lzdC90b2RvaXN0LWFwaS10eXBlc2NyaXB0JzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjcmVhdGVQcm9qZWN0KG5hbWU6IHN0cmluZywgb3B0aW9ucz86IHsKICBjb2xvcj86IHN0cmluZzsKICBwYXJlbnRJZD86IHN0cmluZzsKICBvcmRlcj86IG51bWJlcjsKICBmYXZvcml0ZT86IGJvb2xlYW47Cn0pIHsKICB0cnkgewogICAgY29uc3QgYXBpID0gbmV3IFRvZG9pc3RBcGkocHJvY2Vzcy5lbnYuVE9ET0lTVF9BUElfVE9LRU4pOwogICAgcmV0dXJuIGF3YWl0IGFwaS5hZGRQcm9qZWN0KHsKICAgICAgbmFtZSwKICAgICAgLi4ub3B0aW9ucwogICAgfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ0ZhaWxlZCB0byBjcmVhdGUgcHJvamVjdDonLCBlcnJvcik7CiAgICB0aHJvdyBlcnJvcjsKICB9Cn0="}
